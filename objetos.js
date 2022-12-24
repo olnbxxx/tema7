@@ -5,17 +5,21 @@ const mySelf = {
     altura: 1.70,
     eresDesarrollador: true
 }
+
 let old = mySelf.edad;
 
-const lista = [mySelf];
-const amigos = {
-    
-        friend1: "urtiz",
-        edadFriend1: 35,
-    
-        friend2: "jose",
-        edadFriend2: 47,
-}
-const lista2 = [mySelf, amigos];
+const amigos = [
+    persona = {
+        nombre: "urtzi",
+        edad: 35,
+    },
+    persona2 = {
+        nombre: "jose",
+        edad: 47,
+    },
+    mySelf
+]
 
-console.log(lista2);
+const ordenada = amigos.sort((a, b) => b.edad - a.edad);
+
+console.log(ordenada);
